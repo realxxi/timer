@@ -27,6 +27,7 @@ function time() {
     }else if(hour.value==0 && minut.value==0 && secund.value== 0){
         start.style.display = "flex"
         stop.style.display = "none"
+        clearInterval(a)
     }
 
 }
@@ -35,7 +36,6 @@ start.addEventListener("click", () => {
     start.style.display = "none"
     stop.style.display = "flex"
     let a = setInterval(time, 1000)
-    a
     stop.addEventListener("click", () => {
         start.style.display = "flex"
         stop.style.display = "none"
