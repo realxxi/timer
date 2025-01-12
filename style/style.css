@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.cart {
+  border: 2px solid;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.cart h1 {
+  text-align: center;
+}
+.cart input {
+  font-size: 80px;
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.cart input::placeholder {
+  color: black;
+  font-size: 80px;
+}
+.cart input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#start {
+  width: 10%;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: green;
+  color: white;
+}
+
+.button:active {
+  transform: scale(0.9);
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 13px 7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0px 0px 13px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 13px 7px rgba(0, 0, 0, 0.7);
+}
+
+#stop {
+  width: 10%;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 20px;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  .cart {
+    font-size: 13px;
+  }
+  .cart h1 {
+    font-size: 15px;
+  }
+  .cart input {
+    width: 70px;
+    font-size: 50px;
+  }
+  .cart input::placeholder {
+    color: black;
+    font-size: 50px;
+  }
+  .button {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
