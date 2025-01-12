@@ -27,7 +27,7 @@ function time() {
     }else if(hour.value==0 && minut.value==0 && secund.value== 0){
         start.style.display = "flex"
         stop.style.display = "none"
-        clearInterval(a)
+        clearInterval(time())
     }
 
 }
